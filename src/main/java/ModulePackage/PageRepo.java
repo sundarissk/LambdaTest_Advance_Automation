@@ -1,5 +1,7 @@
 package ModulePackage;
 
+import static org.testng.Assert.assertTrue;
+
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -79,11 +81,13 @@ public class PageRepo {
 
 					System.out.println(title);
 					System.out.println(tit);
-
+					
+					boolean status = false;
 					if (title.equals(tit)) {
 						System.out.println("Title Assertion Pass");
-					} else
-						System.err.println("Title Assertion Fail");
+						status = true;
+					}
+					assertTrue(status, "Title Assertion Fails");
 					System.out.println("Handles Count: " + handles.size());
 				}
 			}
@@ -115,10 +119,13 @@ public class PageRepo {
 						System.out.println(title);
 						System.out.println(tit);
 
+						boolean status = false;
 						if (title.equals(tit)) {
 							System.out.println("Title Assertion Pass");
-						} else
-							System.err.println("Title Assertion Fail");
+							status = true;
+
+						}
+						assertTrue(status, "Title Assertion Failed");
 						System.out.println("Handles Count: " + handles.size());
 
 					}

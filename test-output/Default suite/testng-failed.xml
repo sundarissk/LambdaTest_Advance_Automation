@@ -5,6 +5,8 @@
     <classes>
       <class name="TestCases.AutomationTestCases">
         <methods>
+          <include name="SetUp"/>
+          <include name="TearDown"/>
           <include name="test1"/>
         </methods>
       </class> <!-- TestCases.AutomationTestCases -->
