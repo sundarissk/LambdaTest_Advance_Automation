@@ -83,7 +83,7 @@ public class PageRepo {
 					System.out.println(tit);
 					
 					boolean status = false;
-					if (title.equals(tit)) {
+					if (tit.equals(title)) {
 						System.out.println("Title Assertion Pass");
 						status = true;
 					}
@@ -120,7 +120,7 @@ public class PageRepo {
 						System.out.println(tit);
 
 						boolean status = false;
-						if (title.equals(tit)) {
+						if (tit.equals(title)) {
 							System.out.println("Title Assertion Pass");
 							status = true;
 
